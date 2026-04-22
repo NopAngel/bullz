@@ -1,0 +1,5 @@
+%token NUMBER
+%%
+exp : NUMBER { $$ = $1 + 10; printf("Calculated: %d\n", $$); }
+    ;
+%%
