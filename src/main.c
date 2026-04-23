@@ -2,7 +2,6 @@
 *           main.c   :       This is the main file
 *                            here are the main functions.
 *   
-*
 * --------------------------------------------------------
 *       @Copyright 2026 - APACHE-2.0 
 *
