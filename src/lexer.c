@@ -48,5 +48,6 @@ get_next_bcz_token(FILE *file)
             return (BCZ_Token){BCZ_C_BLOCK, block};
         }
     }
-    return (BCZ_Token){BCZ_EOF, NULL};
+    
+    return (BCZ_Token) { BCZ_EOF, NULL };
 }
