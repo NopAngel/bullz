@@ -2,22 +2,21 @@
 #           Makefile:     
 #	* This is the compilation file
 #  
-# @Copyright 2026 - APACHE-2.0 
+#         @Copyright 2026 - APACHE-2.0 
 #
 
 CC 		  = gcc
 CFLAGS 	  = -Wall -Wextra -Iinclude -g
 Q 		  = @
-
 SRC 	  = src/main.c src/lexer.c
-
 TARGET    = bin/bullz
 DISTFILES = src/*.o .git
+
 
 all: $(TARGET)
 
 
-# ....
+# PRINT A MESSAGE
 $(TARGET): $(SRC)
 	$(Q)echo "  CC    $(SRC) \n  .."
 	$(Q)$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
@@ -32,3 +31,5 @@ clean:
 distclean: clean
 	$(Q)echo "  CLEAN  $(DISTFILES)"
 	$(Q)rm -rf $(DISTFILES)
+
+
